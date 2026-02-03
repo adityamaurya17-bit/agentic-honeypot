@@ -2,8 +2,11 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import time, re, os
 
-# Initialize FastAPI app
-app = FastAPI(title="Agentic Honeypot API", description="Scam detection and intelligence extraction API")
+# Initialize FastAPI app with hackathon-aligned title and description
+app = FastAPI(
+    title="AI for Fraud Detection & User Safety",
+    description="An Agentic Honeypot API for scam detection and intelligence extraction, designed to protect users from fraud and ensure safety."
+)
 
 # Always use environment variable for security
 API_KEY = os.getenv("API_KEY")
@@ -48,7 +51,7 @@ def agent_response(message: str) -> str:
 # Root route for homepage
 @app.get("/")
 def read_root():
-    return {"message": "Agentic Honeypot API is live!"}
+    return {"message": "AI for Fraud Detection & User Safety API is live!"}
 
 # Scam detection endpoint
 @app.post("/message")
