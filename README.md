@@ -144,5 +144,5 @@ curl -X 'POST' \
 
 # Live Demo
 
-- Base URL: https://agentic-honeypot-j39a.onrender.com
-- Swagger Docs: https://agentic-honeypot-j39a.onrender.com/docs
+- Base URL: https://honeypot-sentinel.onrender.com
+- Swagger Docs: https://honeypot-sentinel.onrender.com/docs
